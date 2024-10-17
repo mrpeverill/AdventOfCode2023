@@ -8,6 +8,8 @@ I really failed to find the koolaid with this one. I suspect that these problems
 ## Perl -- day 3
 I haven't written any perl since the 90s! At some point while researching lisp someone reminded me of it. I probably should be using it more instead of bash. Also, it has cool derivatives.
 
+I didn't enjoy perl very much. The syntax feels messy. I can use $. to keep track of the index in a while loop, but not in a foreach loop. substr is a function, but print is... something else that doesn't use parentheses? Basically, the syntax feels inconsistent between contexts. Also, it's odd that there is no max / min function in a language that's this interpreted.
+
 So far I am dissapointed that the 'meat' of each of these puzzles is regex, regardless of language used.
 
 ## Future programming languages to try:
