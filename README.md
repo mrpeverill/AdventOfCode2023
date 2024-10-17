@@ -12,6 +12,8 @@ I didn't enjoy perl very much. The syntax feels messy. I can use $. to keep trac
 
 So far I am dissapointed that the 'meat' of each of these puzzles is regex, regardless of language used.
 
+Solution for day 3 part 1 is done. I'm heavily renaming all the little special variables that perl gives you. For sure the code would be much more compact if I did not do this, but it's not worth the loss of readability. The actual algorithm is about as compact as I could make it. Initially I put the whole string in one variable and subtracted 140 from the index to look at the previous line. Not worth it.
+
 ## Future programming languages to try:
 
 So far the problems are very string processing heavy, which really rewards use of a certain sort of language, but it may be fun to try some other stuff:
