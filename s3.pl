@@ -1,7 +1,6 @@
 #!/usr/bin/perl
 use warnings;
 use strict;
-use Data::Dumper;
 
 # The algorithm:
 # 1. Put the whole file into an array

@@ -8,11 +8,19 @@ I really failed to find the koolaid with this one. I suspect that these problems
 ## Perl -- day 3
 I haven't written any perl since the 90s! At some point while researching lisp someone reminded me of it. I probably should be using it more instead of bash. Also, it has cool derivatives.
 
-I didn't enjoy perl very much. The syntax feels messy. I can use $. to keep track of the index in a while loop, but not in a foreach loop. substr is a function, but print is... something else that doesn't use parentheses? Basically, the syntax feels inconsistent between contexts. Also, it's odd that there is no max / min function in a language that's this interpreted.
+I didn't enjoy perl very much. The syntax feels messy. I can use $. to keep track of the index in a while loop, but not in a foreach loop. substr is a function, but print is... something else that doesn't use parentheses? Basically, the syntax feels inconsistent between contexts. Also, it's odd that there is no max / min function in a language that's this interpreted. length works for strings but you have to use 'scalar' for array?
 
 So far I am dissapointed that the 'meat' of each of these puzzles is regex, regardless of language used.
 
-Solution for day 3 part 1 is done. I'm heavily renaming all the little special variables that perl gives you. For sure the code would be much more compact if I did not do this, but it's not worth the loss of readability. The actual algorithm is about as compact as I could make it. Initially I put the whole string in one variable and subtracted 140 from the index to look at the previous line. Not worth it.
+I had to go past superficial understanding of lookahead to solve part 2, so that's fun. It might be cool to try to do this in Raku also.
+
+## Day 4
+
+Part 1: This is pretty easy in a language with robust list/vector handling. I initially dismissed R because I thought it would be too easy, but I was curious how long it would take me to do it (about 30 minutes -- mostly because the file input was tricky).
+
+Part 2: Oh boy, this one is NOT a particularly good pick for a vectorized language. It could be done though.
+
+
 
 ## Future programming languages to try:
 
@@ -21,5 +29,6 @@ So far the problems are very string processing heavy, which really rewards use o
 * Forth
 * Julia
 * K
+* Raku
 
 This is a great page: https://madhadron.com/programming/seven_ur_languages.html
