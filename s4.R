@@ -26,3 +26,6 @@ recursiveCards<-\(x) {
 }
 
 sum(recursiveCards(lengths))
+
+
+# Can we solve it the R way -- no loops! Maybe not.

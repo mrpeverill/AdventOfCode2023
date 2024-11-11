@@ -18,9 +18,21 @@ I had to go past superficial understanding of lookahead to solve part 2, so that
 
 Part 1: This is pretty easy in a language with robust list/vector handling. I initially dismissed R because I thought it would be too easy, but I was curious how long it would take me to do it (about 30 minutes -- mostly because the file input was tricky).
 
-Part 2: Oh boy, this one is NOT a particularly good pick for a vectorized language. It could be done though.
+Part 2: Oh boy, this one is NOT a particularly good pick for a vectorized language. I ended up using a for loop, which is not good R style but worked well.
 
+## Day 5
 
+Haskell is on my list, and for some reason this problem conforms to my naive idea of what Haskell would be good at (I suppose this is primarily because it works with infinite data ranges and because lazy execution might limit the amount of work we have to do to get the solution.)
+
+...
+
+Haskell did work! This (Part 2 esp.) was the first problem where performance was a bit of an issue. Technically, we can just expand the seed list for part 2 and brute force it, but Haskell is not lazy enough to do that in a performative way. Instead, I used a recursive function to process the ranges.
+
+I'm sort of impressed about how Haskell really constrains you to write elegantly:
+
+For the mapRange example, I started with a function that processed the whole range in one go, returning a variable number of ranges. But then I had a problem where I needed to see if the remainder matched to any maps. I would have had to return some sort of state report from that function. Then I thought, ok I'll use recursion to test the 'remainder' against the remaining maps. I thought, probably I could do this with recursion before and after, but that seems too complicated. But then I realized I  would need to use some sort of flow control to see if there was anything remaining in the prefix. Haskell doesn't facilitate that, so using the before and after recursion turned out to be the best solution. Then I didn't even need to sort the input list, because what I had left was insensitive to the ordering of the maps. Super cool.
+
+I had never programmed in Haskell before. It took 3.5 hours just to get the input processed and honestly I wish I had done that in another way. 2 hours for part 1, 3.75 for part 2.
 
 ## Future programming languages to try:
 
