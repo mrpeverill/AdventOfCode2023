@@ -34,6 +34,9 @@ For the mapRange example, I started with a function that processed the whole ran
 
 I had never programmed in Haskell before. It took 3.5 hours just to get the input processed and honestly I wish I had done that in another way. 2 hours for part 1, 3.75 for part 2.
 
+## Day 6:
+This felt like a cinch. I did it in haskell. The data was copy-pasted into the code. 
+
 ## Future programming languages to try:
 
 So far the problems are very string processing heavy, which really rewards use of a certain sort of language, but it may be fun to try some other stuff:

@@ -3,8 +3,8 @@ import Data.List.Split
 import Data.Char (isDigit)
 import Data.List (sortOn)
 
--- The mapping between seed and location is deterministic. It would be cool and haskell like to cons a defined array of the locations, filtered by whether it matches a seed, but it's going to be more efficient to map over the list of seeds and take a minimum.
--- this involves iterating over a series of table lookups
+-- The mapping between seed and location is deterministic. I debated taking an approach where I took the head of a defined array of the locations, filtered by whether it matches a seed (taking advantage of lazy execution), but decided it would be more  efficient to map over the list of seeds and take a minimum.
+-- this involves folding over a series of table lookups
 
 -- Part 1 Solution
 -- Lookup one number in a map (list of ranges)
@@ -74,7 +74,7 @@ main = do
   print "Part 1:"
   print locations
   print minLocation
-
+  
   print "Part 2:"
   let seedRanges = expandSeeds seeds
   let locationRanges = foldl mapRanges seedRanges ourMaps
