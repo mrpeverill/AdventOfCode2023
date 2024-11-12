@@ -35,7 +35,14 @@ For the mapRange example, I started with a function that processed the whole ran
 I had never programmed in Haskell before. It took 3.5 hours just to get the input processed and honestly I wish I had done that in another way. 2 hours for part 1, 3.75 for part 2.
 
 ## Day 6:
-This felt like a cinch. I did it in haskell. The data was copy-pasted into the code. 
+The brute force solution worked fine and felt like a cinch. I did it in haskell. The data was copy-pasted into the code. I re-approached with more elegance later.
+
+## Day 7:
+Well, we definitely COULD do this in Haskell. We would probably make a function to compare two hands, and then order the bid list by the associated hands. However, it would be much easier to do in a language with data tables, because then we can easily save the rank information in columns and then order by that. In Haskell, it might be most stylistic to use recursion with a comparison function and that function would need to run every time a hand was compared to another. Alternately, we could use a scoring model (make a tuple with (score, bid), then sort).
+
+Maybe we'll do both and benchmark -- fun!
+
+The haskell solution worked fine. We ended up making a scoring function, and then a compare function to compare them. I hardcoded something for J,J,J,J,J on day 2 -- ugly!
 
 ## Future programming languages to try:
 
