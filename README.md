@@ -44,6 +44,13 @@ Maybe we'll do both and benchmark -- fun!
 
 The haskell solution worked fine. We ended up making a scoring function, and then a compare function to compare them. I hardcoded something for J,J,J,J,J on day 2 -- ugly!
 
+I also made a Julia program. I had an algorithm for how to do it thought up in R, and saw Julia as a similar option. I like having list comprehensions available, but overall Julia is the wrong tool for a job of this size -- compilation takes ~30 seconds. However -- it is, indeed, more concise than the haskell solution.
+
+## Day 8:
+We're on a role with haskell -- kind of want to see if I can do this with recursion. I debated whether to use the Data.Map package. You could get around it with indexing, but why not learn to use something new?
+
+Wow part 1's solution feels great and really elegant. I think we can do part 2 easily enough also -- just need to work with lists of locations and some test functions.
+
 ## Future programming languages to try:
 
 So far the problems are very string processing heavy, which really rewards use of a certain sort of language, but it may be fun to try some other stuff:

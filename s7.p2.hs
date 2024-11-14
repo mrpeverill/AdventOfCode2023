@@ -20,7 +20,7 @@ countUnique (x:xs) = (1 + length (filter (==x) xs)):countUnique(filter (/=x) xs)
 
 scoreHand :: [Int] -> [Int]
 scoreHand x
-  | x == [1,1,1,1,1] = [5,0,1,1,1,1,1]
+  | x == [1,1,1,1,1] = [5,0,1,1,1,1,1] -- kludge, obvi, but if we do this then we can just feed a filtered list to count Unique and it works.
   | otherwise = (incFst jokers twoSets)++x
   where twoSets = take 2 (sortDesc . countUnique $ filter (/=1) x)
         jokers = length $ filter (==1) x
