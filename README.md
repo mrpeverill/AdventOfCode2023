@@ -51,6 +51,12 @@ We're on a role with haskell -- kind of want to see if I can do this with recurs
 
 Wow part 1's solution feels great and really elegant. I think we can do part 2 easily enough also -- just need to work with lists of locations and some test functions.
 
+## Day 9:
+This one was a roller coaster. I did it in Haskell (on a roll). Part 1 was easy. I had a beautiful solution for part 2, but it turned out to be too brutish to work (and it was hard to figure that out). The real solution involved a LOT more math than expected.
+
+## Day 10:
+Easy peasy. Haskell made the day 1 to day 2 pivot simple.
+
 ## Future programming languages to try:
 
 So far the problems are very string processing heavy, which really rewards use of a certain sort of language, but it may be fun to try some other stuff:
